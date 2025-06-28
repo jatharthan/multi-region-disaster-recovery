@@ -1,6 +1,6 @@
 resource "aws_dynamodb_table" "this" {
   provider     = aws
-  name         = "${var.project_prefix}-${var.region}-table"
+  name         = "${var.project_prefix}-dynamodb-global-table"
   hash_key     = "id"
   billing_mode = "PAY_PER_REQUEST"
   table_class  = "STANDARD"
